@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta id="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <script defer src="./index.js"></script>
+
+  <style>
+    .attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+  </style>
+
+  <link rel="stylesheet" href="CSS/style.css">
+  
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <div class="fields">
+        <div class="field">
+          <label for="day">Day</label>
+          <br>
+          <input type="text" placeholder="DD" id="day">
+          <br>
+          <div class="err day_err"></div>
+        </div>
+
+        <div class="field">
+          <label for="month">Month</label>
+          <br>
+          <input type="text" placeholder="MM" id="month">
+          <br>
+          <div class="err month_err"></div>
+        </div>
+
+        <div class="field">
+          <label for="year">Year</label>
+          <br>
+          <input type="text" placeholder="YYYY" id="year">
+          <br>
+          <div class="err year_err"></div>
+        </div>
+      </div>
+
+      <div class="gen_err"></div>
+
+      <div class="arrow_hold">
+        <div class="line"></div>
+        <div class="arr_img">
+          <img src="assets/images/icon-arrow.svg" alt="arrow">
+        </div>
+      </div>
+
+      <div class="result_box">
+        <div class="time">
+          <div class="vary" id="vary1"></div>
+          <div> years </div>
+        </div>
+
+        <div class="time">
+          <div class="vary" id="vary2"></div>
+          <div> months </div>
+        </div >
+
+        <div class="time">
+          <div class="vary" id="vary3"></div>
+          <div> days </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://www.frontendmentor.io/profile/Denzel-K">Denzel Kariuki</a>.
+  </div>
+</body>
+</html>
